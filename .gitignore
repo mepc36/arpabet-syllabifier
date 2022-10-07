@@ -18,3 +18,4 @@ dist/
 
 # Virtual environments
 venv/
+.DS_Store

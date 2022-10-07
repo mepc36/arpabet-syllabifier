@@ -10,20 +10,20 @@
 import re
 import sys
 
-from syllabifier.constants import VOICELESS
-from syllabifier.constants import VOICED
-from syllabifier.constants import STOPS
-from syllabifier.constants import FRICATIVES
-from syllabifier.constants import AFFRICATES
-from syllabifier.constants import NASALS
-from syllabifier.constants import APPROXIMANTS
-from syllabifier.constants import CONSONANTS
-from syllabifier.constants import S_EXTENDED_CODAS
-from syllabifier.constants import Z_EXTENDED_CODAS
-from syllabifier.constants import T_EXTENDED_CODAS
-from syllabifier.constants import D_EXTENDED_CODAS
-from syllabifier.constants import PHONESET
-from syllabifier.constants import VOWELS_REGEX
+from constants import VOICELESS
+from constants import VOICED
+from constants import STOPS
+from constants import FRICATIVES
+from constants import AFFRICATES
+from constants import NASALS
+from constants import APPROXIMANTS
+from constants import CONSONANTS
+from constants import S_EXTENDED_CODAS
+from constants import Z_EXTENDED_CODAS
+from constants import T_EXTENDED_CODAS
+from constants import D_EXTENDED_CODAS
+from constants import PHONESET
+from constants import VOWELS_REGEX
 
 def syllabifyARPA(arpa_arr, silence_warnings=False):
     """
@@ -368,3 +368,6 @@ def testLegalCoda(syllable):
             return True
 
     return False
+
+if __name__ == '__main__':
+    print(syllabifyARPA(sys.argv[1]))
